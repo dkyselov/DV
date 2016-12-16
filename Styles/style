@@ -1,0 +1,5 @@
+body{
+	background:#3300FF;
+	background-color:#325456;
+	border:3px;
+}
