@@ -1,4 +1,9 @@
 'use strict';
-module.exports=function(message){
+export default function(message){
+const NODE_ENV="production";
+if(NODE_ENV=='development')
+{
+	console.log(message);
+}
 	alert(`Welcom ${message}`);
 };

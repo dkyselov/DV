@@ -1,6 +1,15 @@
-.cvc{
-	background-color:#3300ff ;
+
+body {
+		
+		background-attachment: fixed;
+		background-position: center; 
+		background-repeat: no-repeat;
+		-webkit-animation: backgroundAnimation 25s linear alternate infinite;
+
 }
-.q{
-	
+
+@-webkit-keyframes backgroundAnimation {
+	0%{background-image: url("../img/1.jpg")}
+	50%{background-image: url("../img/2.jpg")}
+	100%{background-image: url("../img/3.jpg")}
 }
