@@ -1,28 +1,36 @@
 {
-  "name": "dimka",
-  "version": "1.0.0",
-  "description": "first",
-  "main": "app.js",
+  "name": "dv",
+  "version": "1.0.1",
+  "description": "dv",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "0.0.5",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dkyselov/DV.git"
+    "url": "git+https://github.com/dkyselov/D_V.git"
   },
-  "author": "",
+  "keywords": [
+    "first_app",
+    "webpack"
+  ],
+  "author": "Kyselov Dmytro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dkyselov/DV/issues"
+    "url": "https://github.com/dkyselov/D_V/issues"
   },
-  
-  "homepage": "https://github.com/dkyselov/DV#readme",
-  "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-runtime": "^6.20.0",
-    "webpack": "^1.14.0"
-  }
+  "homepage": "https://github.com/dkyselov/D_V#readme"
 }
